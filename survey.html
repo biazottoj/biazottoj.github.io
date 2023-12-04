@@ -1,45 +1,130 @@
-<html>
-    <head>
-        <title>Academic Survey - Tool support for software maintenance</title>
 
-        <style>
-            body {font-family: sans-serif; margin: 25px;}
-            li {margin: 10px;}
-        </style>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Maintenance Survey</title>
 
-    <body> 
-        <h1>Tool support for software maintenance</h1>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+            color: #495057;
+            line-height: 1.6;
+        }
 
-        <p>
-            We are researchers in the field of software engineering at the University of Groningen, the Netherlands. 
-        </p>
+        h1 {
+            color: #dc002d;
+            margin-bottom: 20px;
+        }
 
-        <p>
-            Our objective is to better understand your views regarding the utilization of tools for facilitating software maintenance in practice.
-        </p>
+        p {
+            margin-bottom: 15px;
+        }
 
-        <p>
-            To help us, you can answer one or more of five short surveys (approx. 5-8 minutes each).
-        </p>
+        ul {
+            padding-left: 20px;
+            list-style: disc;
+            margin-bottom: 15px;
+        }
 
-        <p>
-            Each survey addresses a specific scenario illustrating a tool usage:
-        </p>
+        li {
+            margin: 10px 0;
+        }
 
-        <ul>
-            <li>A <b>bot</b> that labels issues based on issue text:                           <a target="_blank" href="https://forms.gle/oYTyxhbhirTaMgY3A">https://forms.gle/oYTyxhbhirTaMgY3A</a></li>
-            <li>A <b>dashboard</b> that presents the amount of code smells and technical debt: <a target="_blank" href="https://forms.gle/Jc6fsAeh2VsAHLe29">https://forms.gle/Jc6fsAeh2VsAHLe2</a></li>
-            <li>A <b>ItelliJ IDEA plugin</b> that suggests refactoring actions:                <a target="_blank" href="https://forms.gle/Tz3XcaCQ9jxiCg297">https://forms.gle/Tz3XcaCQ9jxiCg29</a></li>
-            <li>A <b>Travis CI job</b> that notifies stakeholders considering quality metrics: <a target="_blank" href="https://forms.gle/MghJLApVPeMYLyYC7 ">https://forms.gle/MghJLApVPeMYLyYC</a></li>
-            <li>A <b>bot</b> that facilitates code review in Github pull requests:             <a target="_blank" href="https://forms.gle/bZkSBcjbXfmfavQ48">https://forms.gle/bZkSBcjbXfmfavQ48</a></li>
-        </ul>
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-        
+        .survey-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
 
-<p>Among other goals, we aim to build and help others build support tools that are driven by the added value for the developer. </p>
-<p>Thank you for considering our invitation, and we look forward to your valuable insights.                                     </p>
-<p>If you have any questions, please contact us using the following e-mail <a href="mailto:j.p.biazotto@rug.nl">j.p.biazotto@rug.nl</a></p>
+        .survey-card {
+            background-color: #dc002d;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
 
-    </body>
+        .survey-card p {
+            margin-top: 0;
+        }
+
+        .survey-card:hover {
+            background-color: #ac000d;
+        }
+
+        .footer {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            font-size: 0.8em;
+        }
+
+        .link {
+            color: #dc002d;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .link:hover{
+            color: #ac000d;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Software Maintenance Survey</h1>
+
+        <p>We are researchers from the <a class="link" href="https://search-rug.github.io/" target="_blank">Software Engineering Group (SEARCH)</a>, from University of Groningen, the Netherlands.</p>
+
+        <p>Help us better understand your views on software maintenance tooling. Please consider answering one or more of five short surveys (approx. 5-8 minutes each).</p>
+
+        <p>Each survey addresses a specific scenario illustrating a tool usage:</p>
+
+        <div class="survey-grid">
+            <a class="survey-card" href="https://forms.gle/oYTyxhbhirTaMgY3A" target="_blank">
+                <b>Bot:</b> Label issues based on issue text
+            </a>
+            <a class="survey-card" href="https://forms.gle/Jc6fsAeh2VsAHLe29" target="_blank">
+                <b>Dashboard:</b> Present code smells and technical debt
+            </a>
+            <a class="survey-card" href="https://forms.gle/Tz3XcaCQ9jxiCg297" target="_blank">
+                <b>IntelliJ IDEA Plugin:</b> Suggest refactoring actions
+            </a>
+            <a class="survey-card" href="https://forms.gle/MghJLApVPeMYLyYC7" target="_blank">
+                <b>Travis CI Job:</b> Notification based on quality metrics
+            </a>
+            <a class="survey-card" href="https://forms.gle/bZkSBcjbXfmfavQ48" target="_blank">
+                <b>Bot:</b> Facilitate code review in GitHub pull requests
+            </a>
+        </div>
+
+        <p>We aim to build and help others build support tools that are driven by the added value for the developer.</p>
+
+        <p>Thank you for considering our invitation, and we look forward to your input!</p>
+    </div>
+
+    <div class="container footer">
+        <p>If you have any questions, please contact us using the following email: <a href="mailto:j.p.biazotto@rug.nl">j.p.biazotto@rug.nl</a></p>
+    </div>
+
+</body>
 </html>
